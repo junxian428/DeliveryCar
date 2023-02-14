@@ -43,6 +43,12 @@ Arduino Mega powered by USB
 11- Ladder programming OMRON PLC
 
 12- Ubuntu command 
+
+Ubuntu bionic 18.04.6
+
+Some version ROS is not compatible
+
+https://wiki.ros.org/Distributions
 _____________________________________________________________________________________________________________________________________________________
 
 
