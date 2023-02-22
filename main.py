@@ -1,15 +1,21 @@
-import serial
+import os
 
-with serial.Serial('/dev/ttyACM0',9600,timeout=10)as ser:
-        while True:
-                motor_move=raw_input('Which direction you want to move?')[0]
-                if motor_move in 'Ff':
-                        ser.write("Forward\n".encode('utf-8'))
-                if motor_move in 'Bb':
-                        ser.write("Backward\n".encode('utf-8'))
-                if motor_move in 'Ll':
-                        ser.write("Left\n".encode('utf-8'))
-                if motor_move in 'Rr':
-                        ser.write("Right\n".encode('utf-8'))
-                if motor_move in 'Ss':
-                        ser.write("Stop\n".encode('utf-8'))
+inp = ""
+
+while inp != "Exit":             # Loop continuously
+    inp = ""
+    print("1- FORWARD")
+    print("2- STOP")
+    print("Exit")
+
+    inp = raw_input("Enter your selection:")       # Get the input
+    if inp == "FORWARD":       # If it is a blank line...
+        os.system("rostopic pub toggle_led std_msgs/Empty --once")
+    elif inp == "STOP":
+        os.system("rostopic pub stop_motor std_msgs/Empty --once")
+    else:
+        print("You are exiting the program!!!")
+        inp = "Exit"
+
+
+   
