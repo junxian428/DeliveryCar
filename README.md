@@ -15,6 +15,22 @@ Solved and Demo Video:
 
 https://youtu.be/sfYTQ9pSfkc
 
+Command:
+
+Run the server: roscore
+
+Run the port: rosrun rosserial_python serial_node.py /dev/ttyACM0
+
+Turn Off: rostopic pub stop_motor std_msgs/Empty --once
+ 
+Turn On: rostopic pub toggle_led std_msgs/Empty --once
+
+
+GUI with Python:
+
+
+
+
 
 Research Part:
 
