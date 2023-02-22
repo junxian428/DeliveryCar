@@ -11,6 +11,10 @@ Undervoltage for motor shield SmartDriveDuo-10 Cython
 
 Error Code (3 blinking LED)
 
+Solved and Demo Video:
+
+https://youtu.be/sfYTQ9pSfkc
+
 
 Research Part:
 
