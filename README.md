@@ -26,9 +26,11 @@ Turn Off: rostopic pub stop_motor std_msgs/Empty --once
 Turn On: rostopic pub toggle_led std_msgs/Empty --once
 
 
-GUI with Python:
+Demo video:
 
+Arduino + JetSon Nano + 24DC Motor + SmartDriverDuo-10 + Python FastAPI + Go Desktop + Flutter + ROS
 
+https://youtu.be/fhBuPoX1ITI
 
 
 
